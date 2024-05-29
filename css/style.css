@@ -25,13 +25,15 @@ body {
 }
 
 .container-main {
+    display: grid;
+    padding: 0 50px;
     background-color: black;
     height: calc(100vh - 90px);
-    width: 100vw;
+    width: 103%;
     overflow-y: auto; 
     overflow-x: hidden; 
     position: relative;
-    right: 20px;
+    right: 25px;
 }
 
 .col-10 {
