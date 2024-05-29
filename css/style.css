@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* Layout */
@@ -26,9 +26,12 @@ body {
 
 .container-main {
     background-color: black;
-    height: 100vh;
-    max-width: 100%;
-    overflow-y: auto;    
+    height: calc(100vh - 90px);
+    width: 100vw;
+    overflow-y: auto; 
+    overflow-x: hidden; 
+    position: relative;
+    right: 20px;
 }
 
 .col-10 {
@@ -36,10 +39,32 @@ body {
 }
 
 .col-14 {
+    flex: 1 1 auto;
     width: 187px;
-    position: relative;
-    left: 20px;
     padding-top: 8px;
+}
+
+.col-20 {
+    width: 20%;
+    display: flex;
+    gap: 30px;
+    margin-left: 5px;
+}
+
+.col-22 {
+    width: 8%;
+    margin-left: 20px;
+    background-color: rgb(94, 93, 93);
+    height: 60px;
+    text-align: center;
+    padding-top: 23px;
+}
+
+.col-60 {
+    width: 60%;
+    display: flex;
+    gap: 30px;
+    margin-left: 100px;
 }
 
 /* Content */
@@ -59,6 +84,39 @@ body {
     position: relative;
     top: 40%;
     left: 20%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.footer-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-icon i {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.footer-icon span {
+    font-size: 12px;
+}
+
+.footer .text-red {
+    color: red;
+    font-size: 12px;
 }
 
 img {
