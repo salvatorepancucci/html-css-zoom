@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Layout */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 100%;
+    height: 30px;
+    background-color: black; 
+    display: flex;
+    justify-content: flex-end;
+}
+
+.col-10 {
+    padding: 5px;
+}
+
+/* Content */
+
+.content {
+    display: inline-block;
+    font-size: 11px;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(96, 96, 96);
+    opacity: 80;
+    border-radius: 2px;
+    padding: 2px;
+}
