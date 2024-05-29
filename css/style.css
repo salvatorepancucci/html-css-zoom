@@ -6,6 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    overflow: hidden;
 }
 
 /* Layout */
@@ -23,8 +24,22 @@ body {
     justify-content: flex-end;
 }
 
+.container-main {
+    background-color: black;
+    height: 100vh;
+    max-width: 100%;
+    overflow-y: auto;    
+}
+
 .col-10 {
     padding: 5px;
+}
+
+.col-14 {
+    width: 187px;
+    position: relative;
+    left: 20px;
+    padding-top: 8px;
 }
 
 /* Content */
@@ -38,4 +53,15 @@ body {
     opacity: 80;
     border-radius: 2px;
     padding: 2px;
+}
+
+.content-main {
+    position: relative;
+    top: 40%;
+    left: 20%;
+}
+
+img {
+    width: 180px;
+    height: 105px;
 }
