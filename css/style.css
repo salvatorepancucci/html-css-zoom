@@ -33,7 +33,21 @@ body {
     overflow-y: auto; 
     overflow-x: hidden; 
     position: relative;
-    right: 25px;
+    right: 15px;
+    margin: 0 auto;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
 }
 
 .col-10 {
@@ -85,20 +99,7 @@ body {
 .content-main {
     position: relative;
     top: 40%;
-    left: 20%;
-}
-
-.footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
+    right: -5%;
 }
 
 .footer-icon {
